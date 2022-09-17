@@ -52,21 +52,21 @@ def run_game():
 
         time.sleep(1)
 
-        user_choice1 = input("Type: A - B - C: \n")
+        user_choice = input("Type: A - B - C: \n")
 
-        if user_choice1.upper().strip() == "A":
+        if user_choice.upper().strip() == "A":
             clear_screen()
             print(random.choice(POSITIVE))
             quotes_1()
             time.sleep(3)
             second_question()
-        elif user_choice1.upper().strip() == "B":
+        elif user_choice.upper().strip() == "B":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_1()
             time.sleep(3)
             first_question()
-        elif user_choice1.upper().strip() == "C":
+        elif user_choice.upper().strip() == "C":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_1()
@@ -90,21 +90,21 @@ def run_game():
 
         time.sleep(1)
 
-        user_choice1 = input("Type: A - B - C: \n")
+        user_choice = input("Type: A - B - C: \n")
 
-        if user_choice1.upper().strip() == "A":
+        if user_choice.upper().strip() == "A":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_2()
             time.sleep(3)
             second_question()
-        elif user_choice1.upper().strip() == "B":
+        elif user_choice.upper().strip() == "B":
             clear_screen()
             print(random.choice(POSITIVE))
             quotes_2()
             time.sleep(3)
             third_question()
-        elif user_choice1.upper().strip() == "C":
+        elif user_choice.upper().strip() == "C":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_2()
@@ -131,21 +131,21 @@ def run_game():
 
         time.sleep(1)
 
-        user_choice1 = input("Type: A - B - C: \n")
+        user_choice = input("Type: A - B - C: \n")
 
-        if user_choice1.upper().strip() == "A":
+        if user_choice.upper().strip() == "A":
             clear_screen()
             print(random.choice(POSITIVE))
             quotes_3()
             time.sleep(3)
             fourth_question()
-        elif user_choice1.upper().strip() == "B":
+        elif user_choice.upper().strip() == "B":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_3()
             time.sleep(3)
             third_question()
-        elif user_choice1.upper().strip() == "C":
+        elif user_choice.upper().strip() == "C":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_3()
@@ -168,21 +168,21 @@ def run_game():
         print("easier for firefighters to get inside.\n")
         print("C: Close doors and windows behind you when you can.\n")
 
-        user_choice1 = input("Type: A - B - C: \n")
+        user_choice = input("Type: A - B - C: \n")
 
-        if user_choice1.upper().strip() == "A":
+        if user_choice.upper().strip() == "A":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_4()
             time.sleep(3)
             fourth_question()
-        elif user_choice1.upper().strip() == "B":
+        elif user_choice.upper().strip() == "B":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_4()
             time.sleep(3)
             fourth_question()
-        elif user_choice1.upper().strip() == "C":
+        elif user_choice.upper().strip() == "C":
             clear_screen()
             print(random.choice(POSITIVE))
             quotes_4()
@@ -203,21 +203,21 @@ def run_game():
         print("B: Pat out the flames while you go.\n")
         print("C: Stop, drop and roll.\n")
 
-        user_choice1 = input("Type: A - B - C: \n")
+        user_choice = input("Type: A - B - C: \n")
 
-        if user_choice1.upper().strip() == "A":
+        if user_choice.upper().strip() == "A":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_5()
             time.sleep(3)
             fifth_question()
-        elif user_choice1.upper().strip() == "B":
+        elif user_choice.upper().strip() == "B":
             clear_screen()
             print(random.choice(NEGATIVE))
             quotes_5()
             time.sleep(3)
             fifth_question()
-        elif user_choice1.upper().strip() == "C":
+        elif user_choice.upper().strip() == "C":
             clear_screen()
             print(random.choice(POSITIVE))
             quotes_5()
@@ -230,6 +230,40 @@ def run_game():
             fifth_question()
 
     def sixth_question():
+        clear_screen()
+
+        print("Your escape route is filled with heavy smoke. You should:\n")
+        print("A: Find a different way out.\n")
+        print("B: Go anyway. Just move quickly.\n")
+        print("C: Stay put and wait for help.\n")
+
+        user_choice = input("Type: A - B - C: \n")
+
+        if user_choice.upper().strip() == "A":
+            clear_screen()
+            print(random.choice(POSITIVE))
+            quotes_6()
+            time.sleep(3)
+            seventh_question()
+        elif user_choice.upper().strip() == "B":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_6()
+            time.sleep(3)
+            sixth_question()
+        elif user_choice.upper().strip() == "C":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_6()
+            time.sleep(3)
+            sixth_question()
+        else:
+            clear_screen()
+            print("Type A, B or C.")
+            time.sleep(3)
+            sixth_question() 
+
+    def seventh_question():
         pass
 
     def clear_screen():

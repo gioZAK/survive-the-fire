@@ -39,4 +39,13 @@ def quotes_5():
     print("\nIf your clothes catch fire, immediately STOP, DROP and ROLL")
     print("to put the fire out and minimize burns, and get outside quickly.")
     print("Once you are clear of the fire, Call 999.")
-    
+
+def quotes_6():
+    '''Quotes for the sixth question'''
+
+    print("\nIdeally, due to your family's fire escape planning,")
+    print("you know at least two escape routes from each room.")
+    print("If you can't use your primary route,")
+    print("then use a different door or a window to escape.")
+    print("If you must escape through smoke,")
+    print("then stay low to crawl under the smoke.")
