@@ -44,9 +44,9 @@ def run_game():
     def first_question():
         clear_screen()
         print("You smell smoke, but no one else is reacting. You should:\n")
-        print("A: Alert others of your concern and go outside right away.")
-        print("B: Do nothing. Since nobody else is reacting, why should you.")
-        print("C: Wait for instructions.")
+        print("A: Alert others of your concern and go outside right away.\n")
+        print("B: Do nothing. Since nobody else is reacting, why should you.\n")
+        print("C: Wait for instructions.\n")
 
         time.sleep(1)
 
@@ -77,8 +77,45 @@ def run_game():
             first_question()
 
     def second_question():
-        pass
+        clear_screen()
+        print("You're in your bedroom and you hear a smoke alarm. You should:\n")
+        print("A: Disable it. If you don't smell smoke or see flames,")
+        print("then everything is OK.\n")
+        print("B: Feel the handle to your closed door with the back of")
+        print("your hand. Open it Slowly and make your way outside.\n")
+        print("C: Run outside right away.\n")
 
+        time.sleep(1)
+
+        user_choice1 = input("A - B - C: \n")
+
+        if user_choice1.upper().strip() == "A":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_2()
+            time.sleep(1.5)
+            second_question()
+        elif user_choice1.upper().strip() == "B":
+            clear_screen()
+            print(random.choice(POSITIVE))
+            quotes_2()
+            time.sleep(1.5)
+            third_question()
+        elif user_choice1.upper().strip() == "C":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_2()
+            time.sleep(1.5)
+            second_question()
+        else:
+            clear_screen()
+            print("Type A, B or C.")
+            time.sleep(1.5)
+            second_question()
+
+
+    def third_question():
+        pass
 
     def clear_screen():
         '''
