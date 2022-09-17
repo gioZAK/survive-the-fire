@@ -264,6 +264,42 @@ def run_game():
             sixth_question() 
 
     def seventh_question():
+        clear_screen()
+
+        print("All escape routes are blocked. You should:\n")
+        print("A: Go anyway. Run through the blockage")
+        print("to make your way to safety.\n")
+        print("B: Hide in a closet or under a bed.\n")
+        print("C: Close the door and block all cracks and")
+        print("vents with tape or a damp cloth.\n")
+
+        user_choice = input("Type: A - B - C: \n")
+
+        if user_choice.upper().strip() == "A":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_7()
+            time.sleep(3)
+            seventh_question()
+        elif user_choice.upper().strip() == "B":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_7()
+            time.sleep(3)
+            seventh_question()
+        elif user_choice.upper().strip() == "C":
+            clear_screen()
+            print(random.choice(POSITIVE))
+            quotes_7()
+            time.sleep(3)
+            eight_question()
+        else:
+            clear_screen()
+            print("Type A, B or C.")
+            time.sleep(3)
+            seventh_question()
+
+    def eight_question():
         pass
 
     def clear_screen():

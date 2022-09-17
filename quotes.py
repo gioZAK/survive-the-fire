@@ -49,3 +49,11 @@ def quotes_6():
     print("then use a different door or a window to escape.")
     print("If you must escape through smoke,")
     print("then stay low to crawl under the smoke.")
+
+def quotes_7():
+    '''Quotes for the seventh question'''
+
+    print("\nIf you can't get out of the building, then close the door")
+    print("and cover any vents and the crack under the door")
+    print("with a damp cloth if possible.")
+    print("CALL 112 or 999 (Ireland Only) and signal for help at the window.")
