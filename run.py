@@ -6,21 +6,21 @@ from quotes import *
 POSITIVE = ["Good Job!", "Great!", "You are correct!", "😃"]
 NEGATIVE = ["Oh no!!!", "Try Again", "That's incorrect", "😔"]
 
+
 def run_game():
     '''Main function that runs the game'''
 
     print("Loading...")
     time.sleep(0.5)
-    
 
     def intro_text():
         """
         Function that runs a basic intruduction to the user.
-        """ 
+        """
         clear_screen()
 
         print("Hello!\n")
-        print("In this quick game you will test your knowledge about house fire...")
+        print("In this game you will test your knowledge about house fire!")
         print("Will you be able to surive??\n")
         print("Are you ready??\n")
 
@@ -41,13 +41,13 @@ def run_game():
             print("Type Y or N")
             time.sleep(1.5)
             intro_text()
-        
+
     def first_question():
         clear_screen()
 
         print("You smell smoke, but no one else is reacting. You should:\n")
         print("A: Alert others of your concern and go outside right away.\n")
-        print("B: Do nothing. Since nobody else is reacting, why should you.\n")
+        print("B: Do nothing. Since nobody else is reacting.\n")
         print("C: Wait for instructions.\n")
 
         time.sleep(1)
@@ -81,7 +81,8 @@ def run_game():
     def second_question():
         clear_screen()
 
-        print("You're in your bedroom and you hear a smoke alarm. You should:\n")
+        print("You're in your bedroom and you hear a smoke alarm.")
+        print("You Should: \n")
         print("A: Disable it. If you don't smell smoke or see flames,")
         print("then everything is OK.\n")
         print("B: Feel the handle to your closed door with the back of")
@@ -115,7 +116,6 @@ def run_game():
             print("Type A, B or C.")
             time.sleep(3)
             second_question()
-
 
     def third_question():
         clear_screen()
@@ -157,7 +157,6 @@ def run_game():
             time.sleep(3)
             third_question()
 
-
     def fourth_question():
         clear_screen()
 
@@ -196,7 +195,7 @@ def run_game():
 
     def fifth_question():
         clear_screen()
-        
+
         print("As you are making your way out of the building,")
         print("your clothes catch fire. You should:\n")
         print("A: Keep going and deal with it once you're outside.\n")
@@ -261,7 +260,7 @@ def run_game():
             clear_screen()
             print("Type A, B or C.")
             time.sleep(3)
-            sixth_question() 
+            sixth_question()
 
     def seventh_question():
         clear_screen()
@@ -341,7 +340,7 @@ def run_game():
 
         print("Congratulations!!!\n")
         print("You have finished the quiz!")
-        print("Hopefully you will never have to use this knowledge in your life")
+        print("Hopefully you will never have to use this knowledge.")
         print("Remember: Prevention is your best bet!")
         print("Thank you and stay safe!")
 
@@ -352,11 +351,11 @@ def run_game():
         else:
             intro_text()
 
-
     def clear_screen():
         '''
         This function is used to clear the terminal
-        Source: https://stackoverflow.com/questions/63855637/clearing-the-terminal-for-my-python-text-adventure
+        Source: "https://stackoverflow.com/questions/63855637/
+        clearing-the-terminal-for-my-python-text-adventure"
         '''
 
         sys.stdout.write("\33[H\33[2J")
