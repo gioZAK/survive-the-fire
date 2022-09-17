@@ -7,6 +7,7 @@ def quotes_1():
     print("GET OUT, STAY OUT and CALL 112 or 999 (Ireland Only)")
     print("from a safe location.")
 
+
 def quotes_2():
     '''Quotes for the second question'''
 
@@ -17,6 +18,7 @@ def quotes_2():
     print("If the door is warm, then use a")
     print("different door or a window to escape.\n")
 
+
 def quotes_3():
     '''Quotes for the third question'''
 
@@ -26,6 +28,7 @@ def quotes_3():
     print("If you don't get fast results,")
     print("GET OUT, STAY OUT and CALL 112 or 999 (Ireland Only)")
 
+
 def quotes_4():
     '''Quotes for the fourth question'''
 
@@ -33,12 +36,14 @@ def quotes_4():
     print("helps minimize the amount of oxygen available to fuel the fire.")
     print("That could help slow the spread of the fire.")
 
+
 def quotes_5():
     '''Quotes for the fifth question'''
 
     print("\nIf your clothes catch fire, immediately STOP, DROP and ROLL")
     print("to put the fire out and minimize burns, and get outside quickly.")
     print("Once you are clear of the fire, Call 999.")
+
 
 def quotes_6():
     '''Quotes for the sixth question'''
@@ -50,6 +55,7 @@ def quotes_6():
     print("If you must escape through smoke,")
     print("then stay low to crawl under the smoke.")
 
+
 def quotes_7():
     '''Quotes for the seventh question'''
 
@@ -58,9 +64,10 @@ def quotes_7():
     print("with a damp cloth if possible.")
     print("CALL 112 or 999 (Ireland Only) and signal for help at the window.")
 
+
 def quotes_8():
     '''Quotes for the eight question'''
-    
+
     print("\nNever go back inside until the fire department")
     print("has given you the all clear. Instead, go to the")
     print("meeting place you designated in your fire escape plan.")
