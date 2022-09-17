@@ -29,17 +29,17 @@ def run_game():
         if user_choice.upper().strip() == "Y":
             clear_screen()
             print("Let's go!")
-            time.sleep(2)
+            time.sleep(1)
             first_question()
         elif user_choice.upper().strip() == "N":
             clear_screen()
             print("Come back when you are ready")
-            time.sleep(2)
+            time.sleep(1)
             intro_text()
         else:
             clear_screen()
             print("Type Y or N")
-            time.sleep(2)
+            time.sleep(1.5)
             intro_text()
         
     def first_question():
@@ -195,8 +195,43 @@ def run_game():
             fourth_question()
 
     def fifth_question():
+        clear_screen()
+    
+        print("As you are making your way out of the building,")
+        print("your clothes catch fire. You should:\n")
+        print("A: Keep going and deal with it once you're outside.\n")
+        print("B: Pat out the flames while you go.\n")
+        print("C: Stop, drop and roll.\n")
+
+        user_choice1 = input("Type: A - B - C: \n")
+
+        if user_choice1.upper().strip() == "A":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_5()
+            time.sleep(3)
+            fifth_question()
+        elif user_choice1.upper().strip() == "B":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_5()
+            time.sleep(3)
+            fifth_question()
+        elif user_choice1.upper().strip() == "C":
+            clear_screen()
+            print(random.choice(POSITIVE))
+            quotes_5()
+            time.sleep(3)
+            sixth_question()
+        else:
+            clear_screen()
+            print("Type A, B or C.")
+            time.sleep(3)
+            fifth_question()
+
+    def sixth_question():
         pass
-       
+
     def clear_screen():
         '''
         This function is used to clear the terminal

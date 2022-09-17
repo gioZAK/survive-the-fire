@@ -32,3 +32,11 @@ def quotes_4():
     print("\nClosing doors and windows while you exit a burning building")
     print("helps minimize the amount of oxygen available to fuel the fire.")
     print("That could help slow the spread of the fire.")
+
+def quotes_5():
+    '''Quotes for the fifth question'''
+
+    print("\nIf your clothes catch fire, immediately STOP, DROP and ROLL")
+    print("to put the fire out and minimize burns, and get outside quickly.")
+    print("Once you are clear of the fire, Call 999.")
+    
