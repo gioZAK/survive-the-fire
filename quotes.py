@@ -57,3 +57,13 @@ def quotes_7():
     print("and cover any vents and the crack under the door")
     print("with a damp cloth if possible.")
     print("CALL 112 or 999 (Ireland Only) and signal for help at the window.")
+
+def quotes_8():
+    '''Quotes for the eight question'''
+    
+    print("\n Never go back inside until the fire department")
+    print("has given you the all clear. Instead, go to the")
+    print("meeting place you designated in your fire escape plan.")
+    print("If you can't get there, then follow the emergency communication")
+    print("plan you've established with your family and friends.")
+   

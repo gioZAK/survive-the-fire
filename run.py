@@ -19,9 +19,9 @@ def run_game():
         """ 
         clear_screen()
 
-        print("\nHello!")
+        print("Hello!\n")
         print("In this quick game you will test your knowledge about house fire...")
-        print("Will you be able to surive??")
+        print("Will you be able to surive??\n")
         print("Are you ready??\n")
 
         user_choice = input("Type: Y/N : \n")
@@ -196,7 +196,7 @@ def run_game():
 
     def fifth_question():
         clear_screen()
-    
+        
         print("As you are making your way out of the building,")
         print("your clothes catch fire. You should:\n")
         print("A: Keep going and deal with it once you're outside.\n")
@@ -300,12 +300,63 @@ def run_game():
             seventh_question()
 
     def eight_question():
-        pass
+        clear_screen()
+
+        print("You've made it! You safely got out of the building,")
+        print("and the fire doesn't look that bad. You should:\n")
+        print("A: Go back inside to grab your cell phone.\n")
+        print("B: Go inside, grab a fire extinguisher,")
+        print("and try to fight the flames\n")
+        print("C: Stay outside and head to your.")
+        print("identified meeting place\n")
+
+        user_choice = input("Type: A - B - C: \n")
+
+        if user_choice.upper().strip() == "A":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_8()
+            time.sleep(3)
+            eight_question()
+        elif user_choice.upper().strip() == "B":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_8()
+            time.sleep(3)
+            eight_question()
+        elif user_choice.upper().strip() == "C":
+            clear_screen()
+            print(random.choice(POSITIVE))
+            quotes_8()
+            time.sleep(3)
+            end_game()
+        else:
+            clear_screen()
+            print("Type A, B or C.")
+            time.sleep(3)
+            eight_question()
+
+    def end_game():
+        clear_screen()
+
+        print("Congratulations!!!\n")
+        print("You have finished the quiz!")
+        print("Hopefully you will never have to use this knowledge in your life")
+        print("Remember: Prevention is your best bet!")
+        print("Thank you and stay safe!")
+
+        print("\nType anything and press enter to play again")
+        user_choice = input("Type: ")
+        if user_choice is False:
+            pass
+        else:
+            intro_text()
+
 
     def clear_screen():
         '''
         This function is used to clear the terminal
-        Credit: https://stackoverflow.com/questions/63855637/clearing-the-terminal-for-my-python-text-adventure
+        Source: https://stackoverflow.com/questions/63855637/clearing-the-terminal-for-my-python-text-adventure
         '''
 
         sys.stdout.write("\33[H\33[2J")
