@@ -159,8 +159,44 @@ def run_game():
 
 
     def fourth_question():
+        clear_screen()
+
+        print("There's a fire, but your escape route is clear.")
+        print("While you exit the burning building, you should:\n")
+        print("A: Grab your belongings before leaving.\n ")
+        print("B: Open windows as you go to make it")
+        print("easier for firefighters to get inside.\n")
+        print("C: Close doors and windows behind you when you can.\n")
+
+        user_choice1 = input("Type: A - B - C: \n")
+
+        if user_choice1.upper().strip() == "A":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_4()
+            time.sleep(3)
+            fourth_question()
+        elif user_choice1.upper().strip() == "B":
+            clear_screen()
+            print(random.choice(NEGATIVE))
+            quotes_4()
+            time.sleep(3)
+            fourth_question()
+        elif user_choice1.upper().strip() == "C":
+            clear_screen()
+            print(random.choice(POSITIVE))
+            quotes_4()
+            time.sleep(3)
+            fifth_question()
+        else:
+            clear_screen()
+            print("Type A, B or C.")
+            time.sleep(3)
+            fourth_question()
+
+    def fifth_question():
         pass
-        
+       
     def clear_screen():
         '''
         This function is used to clear the terminal

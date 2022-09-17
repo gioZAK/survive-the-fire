@@ -25,3 +25,10 @@ def quotes_3():
     print("Most portable extinguishers empty within eight seconds.")
     print("If you don't get fast results,")
     print("GET OUT, STAY OUT and CALL 112 or 999 (Ireland Only)")
+
+def quotes_4():
+    '''Quotes for the fourth question'''
+
+    print("\nClosing doors and windows while you exit a burning building")
+    print("helps minimize the amount of oxygen available to fuel the fire.")
+    print("That could help slow the spread of the fire.")
