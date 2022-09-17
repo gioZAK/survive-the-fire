@@ -16,3 +16,12 @@ def quotes_2():
     print("on the other side or heavy smoke prevents you from escaping.")
     print("If the door is warm, then use a")
     print("different door or a window to escape.\n")
+
+def quotes_3():
+    '''Quotes for the third question'''
+
+    print("\nBefore you use a fire extinguisher, ")
+    print("make sure everyone else is out and you have an easy exit.")
+    print("Most portable extinguishers empty within eight seconds.")
+    print("If you don't get fast results,")
+    print("GET OUT, STAY OUT and CALL 112 or 999 (Ireland Only)")
